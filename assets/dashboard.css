@@ -1,0 +1,107 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: fit-content;
+}
+
+.block {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 200px; /* Adjust as needed */
+  text-align: center;
+}
+
+.value {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.unit {
+  font-size: 1em;
+  color: #666;
+}
+
+.minimalistic-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .minimalistic-table th, .minimalistic-table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .minimalistic-table thead tr {
+    border-bottom: 2px solid #000; /* Line between the two rows */
+  }
+  
+  .minimalistic-table tbody tr td:first-child {
+    border-right: 2px solid #000; /* Line between the first and second columns */
+  }
+  
+
+@media (min-width: 768px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value, .unit {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unit {
+    margin-top: 10px;
+  }
+}
+
+.wrapped-blocks {
+  background-color: rgba(0, 123, 255, 0.1); /* Low-opacity blue background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Small shadow */
+  padding: 20px; /* Padding inside the container */
+}
+
+.table-wrapper {
+  background-color: rgba(0, 0, 255, 0.1); /* Different low-opacity blue background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Small shadow */
+  padding: 20px; /* Padding inside the container */
+}
+
+.chart-wrapper {
+  background-color: rgba(0, 255, 0, 0.1); /* Different low-opacity green background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Small shadow */
+  padding: 20px; /* Padding inside the container */
+}
+
+.data-blocks-wrapper {
+  background-color: rgba(255, 165, 0, 0.1); /* Different low-opacity orange background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Small shadow */
+  padding: 20px; /* Padding inside the container */
+
+}

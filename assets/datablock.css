@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.block {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.data-block {
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.data-block h3 {
+  margin-top: 0;
+  font-size: 1em; /* Smaller text for the label */
+}
+
+.data-block p.temperature {
+  font-size: 2em; /* Larger text for the temperature */
+  margin: 10px 0 0;
+}

@@ -1,0 +1,42 @@
+@media (min-width: 1200px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 4px; /* Reduce padding for wide screens */
+  }
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.custom-table th,
+.custom-table td {
+  border: none; /* Remove table borders */
+  text-align: left;
+  padding: 8px;
+}
+
+.custom-table th:nth-child(n+2),
+.custom-table td:nth-child(n+2) {
+  width: 33.33%; /* Ensure equal width for value columns */
+}
+
+.custom-table thead tr {
+  border-bottom: 2px solid #000; /* Line between the two rows */
+}
+
+.custom-table tbody tr td:first-child {
+  border-right: 2px solid #000; /* Line between the first and second columns */
+}
+
+.remarks {
+  font-size: 0.5em; /* Small font size */
+  position: relative;
+  margin-top: 10px; /* Adjust as needed */
+  display: block; /* Ensure it takes the full width */
+  width: 95%;
+  text-align: right;
+}
+

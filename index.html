@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Why AeSea</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/sidebar.css" />
+    <link rel="stylesheet" href="assets/table.css" />
+    <link rel="stylesheet" href="assets/impact.css" />
+    <link rel="stylesheet" href="assets/dashboard.css" />
+    <link rel="stylesheet" href="assets/datablock.css" />
+    <link rel="stylesheet" href="assets/header.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row header">
+        <div class="current-time" id="current-time">00:00</div>
+
+        <a
+          href="http://127.0.0.1:5500/_prototype_story/index.html#achievement"
+          class="btn btn-link"
+          ><i class="bx bx-home-alt"></i
+        ></a>
+        <h5>AeSea @Well Tech Center</h5>
+      </div>
+      <div class="dashboard">
+        <div class="row wrapped-blocks">
+          <div class="row">
+            <div class="block">
+              <h3>We Have Saved</h3>
+            </div>
+            <div class="block">
+              <div class="value">41,000</div>
+              <div class="unit">kWh</div>
+            </div>
+            <div class="block">
+              <div class="value">270</div>
+              <div class="unit">Tonnes of CO2e</div>
+            </div>
+            <div class="block">
+              <div class="value">0.6</div>
+              <div class="unit">Millions of HKD</div>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <div class="row">
+            <div class="block">
+              <table class="minimalistic-table">
+                <thead>
+                  <tr id="daysRow">
+                    <th>Forecast</th>
+                    <!-- New column header -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="carbonRow">
+                    <td>kg of Co2e Saved</td>
+                    <!-- New column data -->
+                  </tr>
+                </tbody>
+              </table>
+              <div class="remarks">*Estimated by HKO Weather Forcast</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="chart-wrapper" style="width: 100%">
+            <div class="block">
+              <div class="chart" style="width: 100%">
+                <div id="chart-efficiency"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-blocks-wrapper">
+          <div class="row">
+            <div class="block" style="width: 20%">
+              <div class="data-block">
+                <h3>Refrigerant Temperature In</h3>
+                <p class="temperature" id="refrigerant-temp-in">00.00°C</p>
+              </div>
+            </div>
+            <div class="block" style="width: 20%">
+              <div class="data-block">
+                <h3>Refrigerant Temperature Out</h3>
+                <p class="temperature" id="refrigerant-temp-out">00.00°C</p>
+              </div>
+            </div>
+            <div class="block" style="width: 20%">
+              <div class="data-block">
+                <h3>Flushing Row Temperature In</h3>
+                <p class="temperature" id="flushing-temp-in">00.00°C</p>
+              </div>
+            </div>
+            <div class="block" style="width: 20%">
+              <div class="data-block">
+                <h3>Flushing Row Temperature Out</h3>
+                <p class="temperature" id="flushing-temp-out">00.00°C</p>
+              </div>
+            </div>
+            <div class="block" style="width: 20%; height: 100%">
+              <div class="data-block" style="height: 100%">
+                <h3>Current AC Temperature</h3>
+                <p class="temperature" id="current-ac-temp">25.0°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/scripts.js"></script>
+    <script src="assets/table.js"></script>
+    <script src="assets/chart.js"></script>
+    <script src="assets/datablock.js"></script>
+    <script src="assets/header.js"></script>
+  </body>
+</html>

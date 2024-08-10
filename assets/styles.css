@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(255, 249, 249);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+.container {
+  position: relative;
+  padding: 0 30px;
+  min-height: 100vh;
+  top: 0 ;
+  transition: all 0.5s ease;
+  padding: 1rem;
+}
+
+
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: green;
+  margin: 10px auto 30px auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 300px;
+  position: relative;
+}
+
+.row:nth-child(2) .col-md-6:first-child {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .right-img{
+    flex: 1;
+    padding-left: 0px;
+}
+.left-img{
+    flex: 1;
+    padding-right: 0px;
+    overflow: hidden; /* Prevent overflow */
+
+
+
+.text-box {
+    padding: 20px;
+    text-align: justify; /* Justify the paragraph text */
+}
+
+
+.img-fluid {
+    height: auto; /* Allow the image to scale */
+    max-height: 100%; /* Ensure the image's max height is the height of the row */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the entire height of the row */
+  }
+
+@media (min-width: 0px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+#medal{
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+

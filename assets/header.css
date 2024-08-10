@@ -1,0 +1,45 @@
+.row.header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    height: 10;
+    height: fit-content;
+    padding: 0.3em 1em;
+    margin-bottom: -1em;
+  }
+  
+  .current-time {
+    font-size: 1.5em; /* Increased font size */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    width: 100px;
+  }
+  
+  .btn-link {
+    margin-right: 10px;
+    width: 20vh;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-left: auto;
+    text-align: right;
+    
+    
+  }
+  
+  .no-bg-button:hover {
+    text-decoration: underline;
+  }
+
+  .row.header h5{
+    font-size: 1.5em;
+    margin-bottom: 0px;
+  }
+
