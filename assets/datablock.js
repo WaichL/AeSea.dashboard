@@ -17,14 +17,14 @@ function generateRandomNumber(floor, ceiling) {
   
 
 
-window.setInterval(function () {
+window.setInterval(function () { 
     let RefInTemp = generateRandomNumber(42.9,43.1).toFixed(2);
     updateHTMLWithId(RefInTemp,"refrigerant-temp-in");
-    let RefOutTemp = generateRandomNumber(6.9,7.1).toFixed(2);
+    let RefOutTemp = generateRandomNumber(42.9,43.1).toFixed(2);
     updateHTMLWithId(RefOutTemp,"refrigerant-temp-out");
     let FluOutTemp = generateRandomNumber(28.9,29.1).toFixed(2);
-    updateHTMLWithId(FluOutTemp,"flushing-temp-in");
+    updateHTMLWithId(FluOutTemp,"flushing-temp-out");
     let FluInTemp = generateRandomNumber(22.9,23.1).toFixed(2);
-    updateHTMLWithId(FluInTemp,"flushing-temp-out");
+    updateHTMLWithId(FluInTemp,"flushing-temp-in");
     updateTime();
   }, 3000);
